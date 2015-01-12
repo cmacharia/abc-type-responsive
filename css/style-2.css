@@ -1,0 +1,278 @@
+
+
+/* ******************************************
+	Styling
+****************************************** */
+/* Nav styling*/
+#nav {
+padding: .7em 0;
+}
+#nav ul {
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    margin: .7em 0 .39em;
+}
+
+#nav li {
+   border-top: 1px solid #eee;
+}
+#nav a {
+   display: block;
+   font-size: 1em;
+   color: #a0a0a0;
+   text-decoration: none;
+   padding: 1.05em 1.4em; 
+}
+#nav nav {
+    height: 0;
+    overflow: hidden;
+    
+}
+body { 
+    -webkit-animation: bugfix infinite 1s; 
+}
+
+@-webkit-keyframes bugfix {
+    from {padding: 0;} 
+    to {padding: 0;} 
+}
+
+/* 
+1. Hide <nav> off-screen / -9999px/-999em technique works best.
+*/
+
+#nav input[type=checkbox] {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+}
+#nav label {
+    min-height: 36px;
+    display: block;
+    background: url("../images/icon-png2x.png") no-repeat right center;
+    text-indent: -999em;
+    cursor: pointer;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+}
+#nav input[type=checkbox]:checked ~ nav {
+    height: auto;
+    overflow: hidden;
+    margin-top: .7em;
+}
+
+
+#nav a.home-link  {float: left;
+background: url("../images/small-logo.png") no-repeat top left;  width: 207px; height: 23px; text-indent: -99999px; padding: 0; margin-top: .35em}
+/* Nav ^^^^ */
+.box {
+	padding: 14px;
+}
+
+img {
+	max-width: 100%;
+}
+#nav,
+#masthead,
+#content,
+#colophon {
+	margin: 0 3.3%;
+}
+html {
+    font-size: 100%;
+    line-height: 1;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.wrapper {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+h1, h2,h3, h4, h5 {
+	font-family: 'Droid Serif', serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 3em;
+	line-height: 1.4;
+}
+
+h2 { font-size: 2em;
+line-height: 1.4;
+
+	
+}
+h3 {
+	font-size: 1.4em;
+	line-height: 1.25;
+}
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+
+p {font-size: 1em;
+line-height: 1.375;}
+#container-nav {
+	background: #1c1c1c;
+}
+
+#home-content article {
+	padding-top: .7em;
+	padding-bottom: 1.4em;
+}
+#home-content article figure {
+	padding: 1.05em;
+	background: #fff;
+	
+
+}
+
+ .home {
+	background: #1c1c1c;
+	}
+#nav, #masthead, #home-content, #colophon {
+	margin: 0 3.3%;
+}
+#home-content li {
+	list-style: none;
+	margin-bottom: 1.4em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	-moz-box-shadow: 0 0 .35em .13em rgba( 0, 0, 0, .3 );
+	-webkit-box-shadow: 0 0 .35em .13em rgba( 0, 0, 0, .3 );
+	box-shadow: 0 0 .35em .13em rgba( 0, 0, 0, .3 );
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #f0f0f0;
+	max-width: 25em;
+
+	
+}
+#home-content li h3 {
+	text-align: center;
+	padding: .35em;
+}
+
+#container-nav {
+	background: #1c1c1c;
+}
+
+#container-header {
+    background: #972929 url("../images/bg-l.jpg") no-repeat top center;
+    color: #fff;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+    padding: 5% 0;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    
+}
+
+
+#container-content {
+	background: #484848;
+	padding: 24px 0;		
+}
+#container-footer {
+	padding: 32px 0;
+	background: #1c1c1c;
+	color: #eee;
+	font-weight: 100;
+}
+
+#container-footer li{
+	list-style: none;
+	border-bottom: 1px dotted #eee;
+	}
+#container-footer li a{
+	color: #a0a0a0;
+	padding: 1.05em 1.4em;
+	display: block;
+	text-decoration: none;
+	}
+
+span.masthead-logo {display: none;}
+
+
+/****media query Styling below **/
+@media screen and (min-width: 720px) {
+#home-content article {
+    float: left;
+    width: 33.333%;
+    
+}
+
+ #nav,
+        #masthead,
+        #content,
+        #colophon {
+           
+        }
+#masthead {max-width: 47em;}
+span.masthead-logo {background: url("../images/main_logo.png") no-repeat top left;
+display: block;
+width: 332px;
+height: 62px;
+text-indent: -99999px;
+padding-bottom: 1.05em;
+}
+#nav a.home-link {background: none !important; text-indent: 0 !important; width: auto !important; height: auto !important; padding: .7em 1.4em !important;
+
+	}}
+
+
+
+@media screen and (min-width: 450px) {
+	#home-content li {
+		float: left;
+		width: 45%;
+		
+		
+		
+	}
+	#home-content li:nth-child(odd) {
+		margin-right: 5%;
+	}
+	
+	
+	
+}
+
+@media screen and (min-width: 680px) {
+	#home-content li {width: 22.5%;}
+	#home-content li{
+		margin-right: 2.5%;
+	}
+	#home-content li:nth-child(odd) {
+		margin-right: 2.5%;
+	}
+	#home-content li:last-child {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#container-header{ background: #972929 url("../images/bg-s.jpg") no-repeat top center;
+    color: #fff;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+    padding: 5% 0;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+#masthead h2 {font-size: 1.5em ;}
+}

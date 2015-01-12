@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    	<meta charset="UTF-8">
+		<title>abc typography</title>
+		
+		<!-- Viewport meta tag to prevent iPhone from scaling our page -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link rel="stylesheet" href="./css/fixes_resets.css"/>
+		<link rel="stylesheet" href="./css/style-2.css"/>
+		
+		<!-- Normalize hide address bar for iOS and Android -->
+		<script src="./js/hideaddressbar.js"></script>
+		
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+                
+                <!-- Add media query support for IE8 and under. Must place media queries in external stylesheet -->
+<script src=".js/respond.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+			
+	<style type="text/css" media="all">
+        
+
+@media screen and (min-width: 720px) {
+	#nav {padding: 0;}
+	 #nav label {display: none;}
+	#nav h2 {margin: 0em 1.4em 0 0;}
+	#nav nav {height: auto; overflow: visible;}
+	#nav ul {border: 0; margin: 0;}
+	#nav li { display: inline; border: 0;}
+	 #nav a {display: inline-block; }
+	 #container-footer li{
+	display: inline;
+	border: 0;
+	}
+#container-footer li a{
+	display: inline-block;
+	}
+
+    }
+
+	</style>
+</head>
+
+<body class="home">
+ <div id="container-nav">
+    
+    <section id="nav" class="wrapper">
+        <a class="home-link" href="">Home</a>
+         <!-- Checkbox Hack markup -->
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" onclick>Menu</label>
+        <!-- /Checkbox Hack markup -->
+    <nav>
+	
+        <ul>
+             <li><a href="#">Classical</a></li>
+             <li><a href="#">Modern</a></li>
+             <li><a href="#">20th Century</a></li>
+             <li><a href="#">Atypical</a></li>
+        </ul>
+    </nav>
+    </section>
+ </div>
+ <div id="container-header">
+<header id="masthead" class="wrapper">
+<span class="masthead-logo">abc typography - an online museum of Typography</span>
+    <h2>This virtual museum presents some of the most famous typefaces ever created.
+One of the goals of abc typography is to underline the fact that every typeface has its own history.</h2>
+</header>
+ </div>
+<div id="container-content">
+<section id="home-content" class="group wrapper">
+    <ul class="group">
+        <li><figure><img src="images/font-1.jpg"></figure><h3>Classical</h3></li>
+        <li><figure><img src="images/font-1.jpg"></figure><h3>Modern</h3></li>
+        <li><figure><img src="images/font-1.jpg"></figure><h3>20th Century</h3></li>
+        <li><figure><img src="images/font-1.jpg"></figure><h3>Atypical</h3></li>
+    </ul>
+</section>
+
+</div>
+<div id="container-footer">
+<footer id="colophon" class="wrapper">
+	<ul>
+             <li><a href="#">Magazines</a></li>
+             <li><a href="#">Manual</a></li>
+             <li><a href="#">Books</a></li>
+             <li><a href="#">Directory</a></li>
+        </ul>
+    <p> &copy 2013 ABC Typography Museum</p>
+</footer>
+</div>
+</body>
+</html>
