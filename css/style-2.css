@@ -24,6 +24,7 @@ padding: .7em 0;
    text-decoration: none;
    padding: 1.05em 1.4em; 
 }
+#nav a:hover, #colophon a:hover { color: white; }
 #nav nav {
     height: 0;
     overflow: hidden;
@@ -63,7 +64,7 @@ body {
     overflow: hidden;
     margin-top: .7em;
 }
-
+#container-content li a { text-decoration: none; color: #000;}
 
 #nav a.home-link  {float: left;
 background: url("../images/small-logo.png") no-repeat top left;  width: 207px; height: 23px; text-indent: -99999px; padding: 0; margin-top: .35em}
@@ -161,6 +162,11 @@ line-height: 1.375;}
 	max-width: 25em;
 
 	
+}
+#home-content li:hover {
+    -moz-box-shadow: 0 0 .35em .13em rgba( 0, 0, 0, .7 );
+	-webkit-box-shadow: 0 0 .35em .13em rgba( 0, 0, 0, .7 );
+	box-shadow: 0 0 .35em .13em rgba( 0, 0, 0, .7 );
 }
 #home-content li h3 {
 	text-align: center;
